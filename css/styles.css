@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #ffe53bd8, #ff2525da, #20fa23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    position: fixed;
+    margin-left: -500px;
+   
+}
+.relogio div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;color:  #fff;
+   background: rgba(5, 5, 5, .9);
+   border-radius: 10px;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+   letter-spacing: 3px;
+
+}
+.relogio span{
+    font-weight: bold;
+    font-size: 80px;
+    
+}
+.relogio span:hover{
+   color: #1bf01f;
+}
+.relogio span.tempo{
+    font-size: 10px;
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+    position: relative;
+    top: 0px;
+    left: 30%;
+}
+.relogio span.tempo::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: springgreen;
+    border-radius: 2px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all 300ms ease;
+}
+.relogio span.tempo:hover::after{
+     left: -25%;
+    width: 90%;
+}
+.nome{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  margin-left: 700px;
+  font-weight: bolder;
+  font-size: 26px;
+  font-family: 'Lobster', cursive;
+ 
+}
+
+.nome strong{
+    font-size: 100px;
+    color: blue;
+    position: fixed;
+    margin-left: -530px;
+ 
+}
+
+.nome strong:hover{
+    color: aqua;
+    border-radius: 25px;
+      
+}
+.p1{
+    display: flex;
+    /* letter-spacing: 2px; */
+     margin-top: 60px;
+}
+.nome .p1 p{
+    color: black;
+}
+.nome .p1 p:hover{
+    
+    
+   letter-spacing: 10px;
+    color: rgb(236, 236, 241);
+    transition: all 400ms ease;
+}
+
+
+
+
+
+
+
+
+
+   
